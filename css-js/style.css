@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Inicio Nav-Bar*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .menu-faketrigger{
+    display: none;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    font-size: 24px;
+    padding: 15px 20px;
+}
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: #30E389;
+    text-decoration: underline;
+}
+header .logo{
+    padding: 15px 20px;
+}
+/*Fim Nav-Bar*/
+
+/*Inicio Introdução*/
+.titulo{
+    font-size: 64px;
+    margin: 20px 0;
+    text-align: center;
+    color: #30E389;
+}
+/*Inicio Slider*/
+.slider{
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 300px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    transition: 2s;
+    width: 25%;
+    position: relative;
+}
+.slide img{
+    width: 700px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 700px;
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid black;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #30E389;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+    transition: all ease .5s;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+    transition: all ease .5s;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+    transition: all ease .5s;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+    transition: all ease .5s;
+}
+.navigation-auto div{
+    border: 3px solid ghostwhite;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 700px;
+    margin-top: 470px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #30E389;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #30E389;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #30E389;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #30E389;
+}
+/*Fim Slide*/
+/*Fim Introdução*/
+
+
+@media (max-width: 450px){
+    /*MENU HAMBURGUER*/
+    .menu .menu-faketrigger{
+        position: absolute;
+        z-index: 1000;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+        margin: -16px 0 0 20px;
+    }
+    .menu .menu-lines{
+        position: absolute;
+        z-index: 999;
+        width: 35px;
+        height: 35px;
+    }
+    .menu .menu-lines span{
+        display: block;
+        width: 35px;
+        height: 4px;
+        margin-bottom: 10px;
+        background-color: black;
+        border-radius: 4px;
+        transition: all ease .3s;
+    }
+    header nav .menu-faketrigger{
+        display: block;
+    }
+    .menu .menu-faketrigger:checked ~ .menu-lines span{
+        background-color: aliceblue;
+    }
+    .menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
+        transform-origin: 0% 0%;
+        transform: rotate(45deg)scaleX(1.25);
+    }
+    .menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
+        opacity: 0;
+    }
+    .menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg) scaleX(1.25);
+    }
+    .menu .menu-lines{
+        margin: -16px 0 0 20px;
+    }
+    .menu ul{
+        position: absolute;
+        z-index: 998;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: #333;
+        padding-top: 150px;
+        margin-left: -250px;
+        transition: all ease .4s;
+    }
+    .menu .menu-faketrigger:checked ~ ul{
+        transition: all ease .4s;
+        margin-left: 0;
+    }
+    header nav ul{
+        display: block;
+    }
+    header nav ul li a{
+        color: #30E389;
+    }
+    /*FIM DO MENU*/
+}
