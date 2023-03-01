@@ -38,12 +38,15 @@ header .logo{
     font-size: 64px;
     margin: 20px 0;
     text-align: center;
-    color: #30E389;
+    background: -webkit-linear-gradient(180deg,rgba(2,0,36,1) 48%, rgba(48,227,137,1) 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /*Inicio Slider*/
 .slider{
+    border-radius: 11px;
     margin: 0 auto;
-    width: 700px;
+    width: 1500px;
     height: 500px;
     overflow: hidden;
 }
@@ -61,11 +64,11 @@ header .logo{
     position: relative;
 }
 .slide img{
-    width: 700px;
+    width: 1500px;
 }
 .manual-navigation{
     position: absolute;
-    width: 700px;
+    width: 1550px;
     margin-top: 170px;
     display: flex;
     justify-content: center;
@@ -108,7 +111,7 @@ header .logo{
 }
 .navigation-auto{
     position: absolute;
-    width: 700px;
+    width: 1550px;
     margin-top: 470px;
     display: flex;
     justify-content: center;
