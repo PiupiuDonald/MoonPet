@@ -221,7 +221,7 @@ header .logo{
     .slider{
         border-radius: 11px;
         margin: 0 auto;
-        width: 350px;
+        width: 330px;
         height: 200px;
         overflow: hidden;
     }
@@ -239,6 +239,9 @@ header .logo{
         position: relative;
     }
     .slide img{
-        width: 400px;
+        width: 330px;
+    }
+    .manual-navigation, .navigation-auto{
+        display: none;
     }
 }
