@@ -18,7 +18,7 @@ header nav ul{
 }
 header nav ul li{
     font-size: 24px;
-    padding: 15px 20px;
+    padding: 5px 20px;
 }
 header nav ul li a{
     color: black;
@@ -29,7 +29,8 @@ header nav ul li a:hover{
     text-decoration: underline;
 }
 header .logo{
-    padding: 15px 20px;
+    padding: 5px 20px;
+    width: 12%;
 }
 /*Fim Nav-Bar*/
 
@@ -143,7 +144,7 @@ header .logo{
         width: 35px;
         height: 35px;
         opacity: 0;
-        margin: -16px 0 0 20px;
+        margin: -16px 0 0 10px;
     }
     .menu .menu-lines{
         position: absolute;
@@ -178,7 +179,7 @@ header .logo{
         transform: rotate(-45deg) scaleX(1.25);
     }
     .menu .menu-lines{
-        margin: -16px 0 0 20px;
+        margin: -16px 0 0 10px;
     }
     .menu ul{
         position: absolute;
@@ -202,5 +203,42 @@ header .logo{
     header nav ul li a{
         color: #30E389;
     }
+    header .logo{
+       width: 30%;
+       margin: 0 10px;
+    } 
     /*FIM DO MENU*/
+
+    /*INICIO TITULO */ 
+    .titulo{
+        font-size: 64px;
+        margin: 20px 0;
+        text-align: center;
+        background: -webkit-linear-gradient(180deg,rgba(2,0,36,1) 41%, rgba(48,227,137,1) 0%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .slider{
+        border-radius: 11px;
+        margin: 0 auto;
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+    }
+    .slides{
+        width: 400%;
+        height: 300px;
+        display: flex;
+    }
+    .slides input{
+    display: none;
+    }
+    .slide{
+        transition: 2s;
+        width: 25%;
+        position: relative;
+    }
+    .slide img{
+        width: 400px;
+    }
 }
