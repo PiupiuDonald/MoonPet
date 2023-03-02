@@ -18,14 +18,14 @@ header nav ul{
 }
 header nav ul li{
     font-size: 24px;
-    padding: 5px 20px;
+    padding: 15px 20px;
 }
 header nav ul li a{
-    color: black;
-    text-decoration: none;
+    color: #30E389;
 }
 header nav ul li a:hover{
-    color: #30E389;
+    color: #D7EAF9;
+    transition: all ease .3s;
     text-decoration: underline;
 }
 header .logo{
@@ -163,6 +163,7 @@ header .logo{
     font-size: 2.5rem;
 }
 .card-adocao{
+    margin: 15  px 0;
     padding: 15px 15px;
     border-radius: 20px;
     background-color: #D7EAF9;
@@ -171,8 +172,77 @@ header .logo{
 .card-adocao p{
     font-size: 1.5rem;
 }
+.btnAD{
+    justify-content: center;
+    text-align: center;
+    padding: 10px 8px;
+    width: 150px;
+    background-color: #D7EAF9;
+    border: 1px solid black;
+    align-items: center;
+    margin: 20PX auto;
+    border-radius: 15px;
+}
+.btnAD a{
+    user-select: none;
+    cursor: pointer;
+    font-size: 2rem;
+   color: #30E389;
+}
 
+.Doacao{
+    margin: 10PX 40px;
+}
+.doacaoT{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.card-doacao{
+    margin: 15  px 0;
+    padding: 15px 15px;
+    border-radius: 20px;
+    background-color: #D7EAF9;
+    text-align: center;
+}
+.card-doacao p{
+    font-size: 1.5rem;
+}
+.btnDA{
+    justify-content: center;
+    text-align: center;
+    padding: 10px 8px;
+    width: 150px;
+    background-color: #D7EAF9;
+    border: 1px solid black;
+    align-items: center;
+    margin: 20PX auto;
+    border-radius: 15px;
+}
+.btnDA a{
+    user-select: none;
+    cursor: pointer;
+    font-size: 2rem;
+   color: #30E389;
+}
 
+/*INICIO FOOTER*/
+footer{
+    background-color: #30E389;
+    padding: 20px 0;
+}
+footer p{
+    justify-content: center;
+    display: flex;
+}
+footer .contato{
+    justify-content: center;
+    display: flex;
+}
+footer .icones{
+    margin: 0 15px;
+}
+/*FIM FOOTER*/
 
 @media (max-width: 450px){
     /*MENU HAMBURGUER*/
