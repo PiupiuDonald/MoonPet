@@ -36,10 +36,10 @@ header .logo{
 
 /*Inicio Introdução*/
 .titulo{
-    font-size: 64px;
+    font-size: 80px;
     margin: 20px 0;
     text-align: center;
-    background: -webkit-linear-gradient(180deg,rgba(2,0,36,1) 48%, rgba(48,227,137,1) 0%);
+    background: -webkit-linear-gradient(180deg,rgba(2,0,36,1) 4%, rgba(48,227,137,1) 0%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -134,6 +134,26 @@ header .logo{
 }
 /*Fim Slide*/
 /*Fim Introdução*/
+
+/*INICIO SOBRE*/
+.Sobre{
+    margin: 30px 40px;
+}
+.sobreT{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.card-sobre{
+    padding: 15px 15px;
+    border-radius: 20px;
+    background-color: #D7EAF9;
+    text-align: center;
+}
+.card-sobre p{
+    font-size: 1.5rem;
+}
+
 
 
 @media (max-width: 450px){
@@ -246,10 +266,11 @@ header .logo{
     }
     /*FIM TITULO*/
 
+    /*INICIO SOBRE*/
     .Sobre{
         margin: 20px 25px;
     }
-    .sobreT h2{
+    .sobreT h2{ 
         margin-bottom: 10px;
         font-size: 2.5rem;
         text-align: center;
@@ -262,5 +283,26 @@ header .logo{
     .card-sobre p{
         font-size: 1.3rem;
     }
+    /*FIM SOBRE*/
+
+    /*INICIO ADOÇAO*/
+    .Adocao{
+        margin: 20px 25px;
+    }
+    .adocaoT h2{ 
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .card-adocao{
+        border-radius: 11px;
+        padding: 15px 15px;
+        background-color: #D7EAF9;
+    }
+    .card-adocao p{
+        font-size: 1.3rem;
+    }
+    /*FIM ADOÇÃO*/
+
 }
 
