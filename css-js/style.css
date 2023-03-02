@@ -29,7 +29,7 @@ header nav ul li a:hover{
     text-decoration: underline;
 }
 header .logo{
-    padding: 5px 20px;
+    padding: 5px 10px;
     width: 12%;
 }
 /*Fim Nav-Bar*/
@@ -204,7 +204,7 @@ header .logo{
         color: #30E389;
     }
     header .logo{
-       width: 30%;
+       width: 32%;
        margin: 0 10px;
     } 
     /*FIM DO MENU*/
@@ -244,4 +244,23 @@ header .logo{
     .manual-navigation, .navigation-auto{
         display: none;
     }
+    /*FIM TITULO*/
+
+    .Sobre{
+        margin: 20px 25px;
+    }
+    .sobreT h2{
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .card-sobre{
+        border-radius: 11px;
+        padding: 15px 15px;
+        background-color: #D7EAF9;
+    }
+    .card-sobre p{
+        font-size: 1.3rem;
+    }
 }
+
