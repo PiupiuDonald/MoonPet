@@ -154,6 +154,24 @@ header .logo{
     font-size: 1.5rem;
 }
 
+.Adocao{
+    margin: 30px 40px;
+}
+.adocaoT{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.card-adocao{
+    padding: 15px 15px;
+    border-radius: 20px;
+    background-color: #D7EAF9;
+    text-align: center;
+}
+.card-adocao p{
+    font-size: 1.5rem;
+}
+
 
 
 @media (max-width: 450px){
