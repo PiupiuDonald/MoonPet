@@ -29,8 +29,7 @@ header nav ul li a:hover{
     text-decoration: underline;
 }
 header .logo{
-    padding: 5px 10px;
-    width: 12%;
+    width: 140px;
 }
 /*Fim Nav-Bar*/
 
@@ -39,15 +38,16 @@ header .logo{
     font-size: 80px;
     margin: 20px 0;
     text-align: center;
-    background: -webkit-linear-gradient(180deg,rgba(2,0,36,1) 4%, rgba(48,227,137,1) 0%);
+    background: -webkit-linear-gradient(180deg,rgba(2,0,36,1) 47%, rgba(48,227,137,1) 0%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 /*Inicio Slider*/
 .slider{
+    display: none;
     border-radius: 11px;
     margin: 0 auto;
-    width: 1500px;
+    width: 1400px;
     height: 500px;
     overflow: hidden;
 }
@@ -65,7 +65,7 @@ header .logo{
     position: relative;
 }
 .slide img{
-    width: 1500px;
+    width: 1400px;
 }
 .manual-navigation{
     position: absolute;
@@ -141,17 +141,15 @@ header .logo{
 }
 .sobreT{
     margin-bottom: 15px;
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .card-sobre{
     padding: 15px 15px;
     border-radius: 20px;
-    background-color: #D7EAF9;
-    text-align: center;
+    background-color: ghostwhite;
 }
 .card-sobre p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .Adocao{
@@ -159,18 +157,16 @@ header .logo{
 }
 .adocaoT{
     margin-bottom: 15px;
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .card-adocao{
     margin: 15  px 0;
     padding: 15px 15px;
     border-radius: 20px;
-    background-color: #D7EAF9;
-    text-align: center;
+    background-color: ghostwhite;
 }
 .card-adocao p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .btnAD{
     justify-content: center;
@@ -187,7 +183,7 @@ header .logo{
     user-select: none;
     cursor: pointer;
     font-size: 2rem;
-   color: #30E389;
+   color: #333;
 }
 
 .Doacao{
@@ -195,18 +191,18 @@ header .logo{
 }
 .doacaoT{
     margin-bottom: 15px;
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .card-doacao{
+    box-shadow: 0px 0px 3px 3px  #ccc;
     margin: 15  px 0;
-    padding: 15px 15px;
+    padding: 30px 30px;
     border-radius: 20px;
-    background-color: #D7EAF9;
-    text-align: center;
+    background-color: ghostwhite;
+    
 }
 .card-doacao p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .btnDA{
     justify-content: center;
@@ -240,7 +236,7 @@ footer .contato{
     display: flex;
 }
 footer .icones{
-    margin: 0 15px;
+    margin: 0 20px;
 }
 /*FIM FOOTER*/
 
@@ -364,9 +360,10 @@ footer .icones{
         text-align: center;
     }
     .card-sobre{
+        box-shadow: 0px 0px 3px 3px  #ccc;
         border-radius: 11px;
         padding: 15px 15px;
-        background-color: #D7EAF9;
+        background-color: ghostwhite;
     }
     .card-sobre p{
         font-size: 1.3rem;
@@ -383,14 +380,32 @@ footer .icones{
         text-align: center;
     }
     .card-adocao{
+        box-shadow: 0px 0px 3px 3px  #ccc;
         border-radius: 11px;
         padding: 15px 15px;
-        background-color: #D7EAF9;
+        background-color: ghostwhite;
     }
     .card-adocao p{
         font-size: 1.3rem;
     }
     /*FIM ADOÇÃO*/
+    .Doacao{
+        margin: 20px 25px;
+    }
+    .doacaoT h2{ 
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .card-doacao{
+        box-shadow: 0px 0px 3px 3px  #ccc;
+        border-radius: 11px;
+        padding: 15px 15px;
+        background-color: ghostwhite;
+    }
+    .card-doacao p{
+        font-size: 1.3rem;
+    }
 
 }
 
