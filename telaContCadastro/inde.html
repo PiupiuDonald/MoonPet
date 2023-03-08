@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Faça seu cadastro</title>
+</head>
+
+<body>
+    <!--Nome, Sobrenome, Email, Senha, CPF, Data de Nascimento e Sexo-->
+    <div class="container">
+        
+        <div class="userDetails">
+            <h1>Cadastro</h1>
+            <form class="infos">
+                <div class="inputBox">
+                    <label for="inputName" class="inform">Nome:</label>
+                    <input type="text" id="inputName" class="inputCamp" placeholder="Escreva seu nome">
+                </div>
+                <div class="inputBox">
+                    <label for="inputSecName" class="inform">Sobrenome:</label>
+                    <input type="text" id="inputSecName" class="inputCamp" class="inputSec"
+                        placeholder="Escreva seu sobrenome"><br>
+                </div>
+                <div class="inputBox">
+                    <label for="inputEmail" class="inform">Email:</label>
+                    <input type="email" id="inputEmail" class="inputCamp" placeholder="Escreva seu email">
+                </div>
+                <div class="inputBox">
+                    <label for="inputPassword" class="inform">Senha:</label>
+                    <input type="password" id="inputPassword" class="inputCamp" class="inputSec"
+                        placeholder="Escreva sua senha"><br>
+                </div>
+                <div class="inputBox">
+                    <label for="inputCPF" class="inform">CPF:</label>
+                    <input type="text" id="inputCPF" class="inputCamp" placeholder="___.___.__-__">
+                </div>
+                <div class="inputBox">
+                    <label for="inputCep" class="inform">Cep:</label>
+                    <input type="text" id="inputCep" class="inputCamp" placeholder="_____-___">
+                </div>
+                <div class="inputBox">
+                    <label for="inputDate" class="inform">Data de nascimento:</label>
+                    <input type="date" id="inputDate" class="inputCamp">
+                </div>
+            </form>
+            <div class="inputGender">
+                <p>Selecione o gênero:</p>
+                <input type="radio" id="female" name="check" value="female">
+                <label for="Female">Feminino</label>
+                <input type="radio" id="male" name="check" value="male">
+                <label for="Male">Masculino</label>
+                <input type="radio" id="other" name="check" value="other">
+                <label for="Other">Prefiro não dizer</label>
+            </div>
+            <input type="submit" value="Cadastrar" class="submit">
+        </div>
+    </div>
+</body>
+
+</html>

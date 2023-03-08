@@ -60,7 +60,6 @@ body {
 .btn {
     border-radius: 15px;
     text-transform: uppercase;
-    color: #fff;
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
@@ -83,6 +82,14 @@ body {
     background-color: #30E389;
     border: 1px solid #30E389;
     transition: background-color .5s;
+}
+a{
+    transition: background-color .5s;
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #30E389;
 }
 .btn-second:hover {
     background-color: #fff;
@@ -160,6 +167,7 @@ input:-webkit-autofill
     padding: 0 5px;
 }
 
+/* second content*/
 
 .second-content {
     position: absolute;
@@ -202,13 +210,13 @@ input:-webkit-autofill
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: slidein 1.3s; 
+    animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
 }
 
 .sign-up-js .content::before {
-    animation: slideout 1.3s; 
+    animation: slideout 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
 }
@@ -227,20 +235,21 @@ input:-webkit-autofill
 }
 
 
-
+/* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE*/
 .sign-in-js .first-content .second-column {
 
     z-index: -1;
     position: relative;
-    animation: deslocamentoEsq 1.3s; 
+    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
 .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 1.3s; 
+    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
+/*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
 
 @keyframes deslocamentoEsq {
 
