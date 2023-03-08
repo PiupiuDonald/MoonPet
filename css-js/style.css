@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 /*Inicio Nav-Bar*/
 header{
@@ -44,10 +46,10 @@ header .logo{
 }
 /*Inicio Slider*/
 .slider{
-    display: none;
+    display: block;
     border-radius: 11px;
     margin: 0 auto;
-    width: 1400px;
+    width: 1000px;
     height: 500px;
     overflow: hidden;
 }
@@ -65,7 +67,7 @@ header .logo{
     position: relative;
 }
 .slide img{
-    width: 1400px;
+    width: 1000px;
 }
 .manual-navigation{
     position: absolute;
@@ -137,14 +139,14 @@ header .logo{
 
 /*INICIO SOBRE*/
 .Sobre{
-    margin: 30px 40px;
+    margin: 70px 80px;
 }
 .sobreT{
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
 .card-sobre{
-    padding: 15px 15px;
+    padding: 20px 20px;
     border-radius: 20px;
     background-color: ghostwhite;
 }
@@ -153,7 +155,7 @@ header .logo{
 }
 
 .Adocao{
-    margin: 30px 40px;
+    margin: 80px 90px;
 }
 .adocaoT{
     margin-bottom: 15px;
@@ -182,19 +184,18 @@ header .logo{
 .btnAD a{
     user-select: none;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
    color: #333;
 }
 
 .Doacao{
-    margin: 10PX 40px;
+    margin: 80PX 90px;
 }
 .doacaoT{
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
 .card-doacao{
-    box-shadow: 0px 0px 3px 3px  #ccc;
     margin: 15  px 0;
     padding: 30px 30px;
     border-radius: 20px;
@@ -218,8 +219,8 @@ header .logo{
 .btnDA a{
     user-select: none;
     cursor: pointer;
-    font-size: 2rem;
-   color: #30E389;
+    font-size: 1.5rem;
+   color: #333;
 }
 
 /*INICIO FOOTER*/
