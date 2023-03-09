@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 /*Inicio Nav-Bar*/
 header{
     display: flex;
@@ -19,7 +23,7 @@ header nav ul{
     list-style: none;
 }
 header nav ul li{
-    font-size: 24px;
+    font-size: 1.2rem;
     padding: 15px 20px;
 }
 header nav ul li a{
@@ -31,7 +35,7 @@ header nav ul li a:hover{
     text-decoration: underline;
 }
 header .logo{
-    width: 140px;
+    width: 170px;
 }
 /*Fim Nav-Bar*/
 
@@ -69,26 +73,7 @@ header .logo{
 .slide img{
     width: 1000px;
 }
-.manual-navigation{
-    position: absolute;
-    width: 1550px;
-    margin-top: 170px;
-    display: flex;
-    justify-content: center;
-}
-.manual-btn{
-    border: 2px solid black;
-    padding: 6px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-.manual-btn:hover{
-    background-color: #30E389;
-}
+
 #radio1:checked ~ .first{
     margin-left: 0;
     transition: all ease .5s;
@@ -119,53 +104,32 @@ header .logo{
     display: flex;
     justify-content: center;
 }
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #30E389;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #30E389;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #30E389;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #30E389;
-}
 /*Fim Slide*/
 /*Fim Introdução*/
 
 /*INICIO SOBRE*/
 .Sobre{
-    margin: 70px 80px;
+    background-color: #eeeeeef5;
+    margin: 1% 0 0 0;
+}
+.card-sobre{
+    padding: 50px 90px;
 }
 .sobreT{
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
-.card-sobre{
-    padding: 20px 20px;
-    border-radius: 20px;
-    background-color: ghostwhite;
-}
 .card-sobre p{
     font-size: 1.2rem;
 }
-
-.Adocao{
-    margin: 80px 90px;
+/*FIM SOBRE*/
+/*INICIO ADOCAO*/
+.card-adocao{
+    padding: 50px 90px;
 }
 .adocaoT{
     margin-bottom: 15px;
     font-size: 1.5rem;
-}
-.card-adocao{
-    margin: 15  px 0;
-    padding: 15px 15px;
-    border-radius: 20px;
-    background-color: ghostwhite;
 }
 .card-adocao p{
     font-size: 1.2rem;
@@ -175,52 +139,55 @@ header .logo{
     text-align: center;
     padding: 10px 8px;
     width: 150px;
-    background-color: #D7EAF9;
+    background-color: #30E389;
     border: 1px solid black;
     align-items: center;
     margin: 20PX auto;
     border-radius: 15px;
 }
 .btnAD a{
+    text-decoration: none;
     user-select: none;
     cursor: pointer;
-    font-size: 1.5rem;
-   color: #333;
+    font-size: 1.3rem;
+   color: #fff;
 }
 
 .Doacao{
-    margin: 80PX 90px;
+    background-color: #eeeeeef5;
+    margin: 1% 0 0 0;
+    padding: 15PX 0;
+}
+.card-doacao{
+    padding: 50px 90px;
 }
 .doacaoT{
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
-.card-doacao{
-    margin: 15  px 0;
-    padding: 30px 30px;
-    border-radius: 20px;
-    background-color: ghostwhite;
-    
-}
 .card-doacao p{
     font-size: 1.2rem;
+}
+.card-doacao .btnDA{
+    margin:  0 0 50PX 0;
 }
 .btnDA{
     justify-content: center;
     text-align: center;
     padding: 10px 8px;
     width: 150px;
-    background-color: #D7EAF9;
+    background-color: #30E389;
     border: 1px solid black;
     align-items: center;
     margin: 20PX auto;
     border-radius: 15px;
 }
 .btnDA a{
+    text-decoration: none;
     user-select: none;
     cursor: pointer;
-    font-size: 1.5rem;
-   color: #333;
+    font-size: 1.3rem;
+   color: #fff;
 }
 
 /*INICIO FOOTER*/

@@ -13,15 +13,14 @@ body{
     color: white;
 }
 
-
-
-.container{
+.container{ 
     margin-top: 22vh;
     justify-content: center;
     width: 700px;
 }
 
 .userDetails{
+    border-radius: 15px;
     padding: 25px 30px;
     position: relative;
     width: 100%;
