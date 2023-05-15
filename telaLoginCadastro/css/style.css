@@ -5,13 +5,89 @@
     box-sizing: border-box;
 }
 body {
+    background-color: #e0e0e0;
+}
+main{
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Inicio Nav-Bar*/
+header {
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .menu-faketrigger {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    font-size: 1.2rem;
+    padding: 15px 1.2em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #30E389;
+}
+
+header nav ul li a:hover {
+    color: #D7EAF9;
+    transition: all ease .3s;
+    text-decoration: underline;
+}
+
+header .logo {
+    width: 170px;
+}
+.titulo {
+    font-size: 40px;
+    margin: 10px 1.2em;
+    text-align: center;
+    background: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 36%, rgba(48, 227, 137, 1) 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer {
+    background-color: #30E389;
+    padding: 1% 0;
+    align-items: center;
+}
+
+footer p {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+footer .contato {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.contato a{
+    align-items: center;
+    margin: 0 .5%;
+}
+body {
     font-family: 'Open Sans', sans-serif;
 }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 81.5vh;
     background-color: #ecf0f1;
 }
 .content {
