@@ -1,3 +1,2 @@
 # MoonPetAtt
-
-https://piupiudonald.github.io/MoonPetAtt/
+https://piupiudonald.github.io/MoonPet/
