@@ -437,6 +437,7 @@ footer .contato {
         padding: 20px 0;
     }
     footer p {
+        font-size: 10px;
         justify-content: center;
         display: flex;
         align-items: center;
