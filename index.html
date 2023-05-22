@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="./css-js/style.css">
     <link rel="shortcut icon" href="assets/imagens/favicon_io/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>MoonPet</title>
 </head>
+
 <body>
-    <header>
+    <button class="subir"> <a href="#inicio"><img
+                src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646212_1280.png"></a></button>
+    <header id="inicio">
         <nav class="menu">
             <input type="checkbox" class="menu-faketrigger">
             <div class="menu-lines">
@@ -20,16 +27,18 @@
             </div>
 
             <ul>
-                <li><a href="#ADOTAR">Adote</a></li>
-                <li><a href="#DOAR">Doe</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-                <li><a href="telaLoginCadastro/login.html">Login</a></li>
+                <li><a href="#ADOTAR" class="btn1">Adote</a></li>
+                <li><a href="#DOAR" class="btn2">Doe</a></li>
+                <li><a href="#" class="btn3">Fale Conosco</a></li>
+                <li><a href="telaLoginCadastro/login.html" class="btn4">Login</a></li>
             </ul>
         </nav>
         <!--Titulo da Pagina-->
-        <h1 class="titulo">MoonPet</h1>
+        <h1 id="titulo" class="titulo">MoonPet</h1>
         <!--Fim Titulo da Pagina-->
     </header>
+
+
     <main>
 
         <div class="Introducao">
@@ -48,7 +57,8 @@
                         <img src="assets/imagens/grupo-retrato-de-cinco-adoravel-filhotes-cachorro.jpg" alt="Slide1">
                     </div>
                     <div class="slide">
-                        <img src="assets/imagens/vista-lateral-sorridente-mulher-abracando-cachorro (1).jpg" alt="Slide2">
+                        <img src="assets/imagens/vista-lateral-sorridente-mulher-abracando-cachorro (1).jpg"
+                            alt="Slide2">
                     </div>
                     <div class="slide">
                         <img src="assets/imagens/gato.jpeg" alt="Slide3">
@@ -56,7 +66,7 @@
                     <div class="slide">
                         <img src="assets/imagens/coelho.jpeg " alt="Slide4">
                     </div>
-                    <!--Fim dos Slides-->       
+                    <!--Fim dos Slides-->
                 </div>
             </div>
             <!--Fim do Slider-->
@@ -65,31 +75,38 @@
         <!--Inicio Sobre-->
         <section class="Sobre">
             <div class="card-sobre">
-            <div class="sobreT">
-                <h2>Sobre Nós</h2>
-            </div>
-                <p>Somos um grupo focado em adoções e doações de pets, por aqui tem o intuito de encontrar lares cheios de amor e carinho para esses peludinhos a procura de uma família!
+                <div class="sobreT">
+                    <h2>Sobre Nós</h2>
+                </div>
+                <p>Somos um grupo focado em adoções e doações de pets, por aqui tem o intuito de encontrar lares cheios
+                    de amor e carinho para esses peludinhos a procura de uma família!
                 </p>
                 <br>
-                <p>Em nosso espaço, temos cães, gatos e outras raças para todos os perfis e lares navegue abaixo para acessar as fotos e tudo que você precisa saber sobre os nossos peludinhos: nome, grupo etário, porte, sexo, castrado ou não, se há alguma necessidade especial ou doença, além do perfil social.
+                <p>Em nosso espaço, temos cães, gatos e outras raças para todos os perfis e lares navegue abaixo para
+                    acessar as fotos e tudo que você precisa saber sobre os nossos peludinhos: nome, grupo etário,
+                    porte, sexo, castrado ou não, se há alguma necessidade especial ou doença, além do perfil social.
                 </p>
             </div>
         </section>
         <!--Fim Sobre-->
 
         <!--Inicio Adoção-->
-        <section ID="ADOTAR"class="Adocao">
-            
+        <section ID="ADOTAR" class="Adocao">
+
             <div class="card-adocao">
-            <div class="adocaoT">
-                <h2>Está a fim de adotar um Pet?</h2>
-            </div>
+                <div class="adocaoT">
+                    <h2>Está a fim de adotar um Pet?</h2>
+                </div>
                 <p>
-                    Antes de tudo é muito importante refletir antes da adoção, pense em qual espécie de animal voce vai adotar, o ambiente onde ele irá viver, pois cada pet exige um cuidado especial e diferente. Também é essencial pensar a longo prazo, afinal, cada animal possue, em geral, um tempo de vida acima dos dez anos.
+                    Antes de tudo é muito importante refletir antes da adoção, pense em qual espécie de animal voce vai
+                    adotar, o ambiente onde ele irá viver, pois cada pet exige um cuidado especial e diferente. Também é
+                    essencial pensar a longo prazo, afinal, cada animal possue, em geral, um tempo de vida acima dos dez
+                    anos.
                 </p>
                 <br>
                 <p>
-                    <b>Acima de tudo:</b> lembre-se que voce estará adotando uma vida, pense e repense com cuidado antes de acabar adotando sem resposabilidade nenhuma, pois esse pet irá virar um membro de sua familia.
+                    <b>Acima de tudo:</b> lembre-se que voce estará adotando uma vida, pense e repense com cuidado antes
+                    de acabar adotando sem resposabilidade nenhuma, pois esse pet irá virar um membro de sua familia.
                 </p>
             </div>
             <div class="btnAD">
@@ -98,34 +115,43 @@
         </section>
         <!--FIM ADOCAO-->
         <!--INICIO DOAÇÃO-->
-        <section ID="DOAR"class="Doacao">
+        <section ID="DOAR" class="Doacao">
             <div class="card-doacao">
                 <div class="doacaoT">
                     <h2>Pensando em Adotar um Pet?</h2>
                 </div>
                 <p>
-                    Existe aquela famosa frase “amigo não se compra e nem se abandona”.  Mas sabemos que muitas vezes a permanencia do bichinho com a família é inviável, ainda que não falte amor por ele.  Por exemplo, se a pessoa já não tem mais condições financeiras de cuidar daquele animal ou apenas não tem mais tempo dar a atenção que o animal precisa.
+                    Existe aquela famosa frase “amigo não se compra e nem se abandona”. Mas sabemos que muitas vezes a
+                    permanencia do bichinho com a família é inviável, ainda que não falte amor por ele. Por exemplo, se
+                    a pessoa já não tem mais condições financeiras de cuidar daquele animal ou apenas não tem mais tempo
+                    dar a atenção que o animal precisa.
                 </p>
                 <br>
-                <p>Mas <b>lembre-se</b>, muitas vezes, assumir que não tem condições de oferecer o que o animal merece é um verdadeiro ato de amor!</p>
+                <p>Mas <b>lembre-se</b>, muitas vezes, assumir que não tem condições de oferecer o que o animal merece é
+                    um verdadeiro ato de amor!</p>
             </div>
             <div class="btnDA">
                 <a href="#">Doe aqui</a>
             </div>
         </section>
         <!--FIM DOAÇÃO-->
+
     </main>
 
     <footer>
-        <P>&copy; 2023 Projeto Moon - Todos os direitos reservados</P>
-        <br>
-        <divc class="contato">
-            <a href="mailto: projetomoon6@gmail.com"><img src="assets/imagens/envelope (1).png"  class="icones" ></a>
-            <p class="email">projetomoon6@gmail.com</p>
+        <div class="container">
+            <p>&copy; 2023 Moon Pet. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </div>
     </footer>
 
     <!--Scripts-->
     <script src="assets/js/slide.js"></script>
 </body>
+
 </html>

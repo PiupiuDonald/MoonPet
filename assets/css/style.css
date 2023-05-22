@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -10,9 +10,8 @@
 body {
     background-color: #e0e0e0;
 }
-main{
-    
-}
+
+main {}
 
 html {
     scroll-behavior: smooth;
@@ -148,6 +147,7 @@ header .logo {
 }
 
 .card-sobre p {
+    text-align: justify;
     font-size: 1.3rem;
 }
 
@@ -169,6 +169,7 @@ header .logo {
 }
 
 .card-adocao p {
+    text-align: justify;
     font-size: 1.3rem;
 }
 
@@ -209,6 +210,7 @@ header .logo {
 }
 
 .card-doacao p {
+    text-align: justify;
     font-size: 1.3rem;
 }
 
@@ -237,28 +239,46 @@ header .logo {
     color: #000000;
 }
 
+.subir{
+    display: none;
+}
 /*INICIO FOOTER*/
 footer {
-    background-color: #30E389;
-    padding: 1% 0;
-    align-items: center;
+    font-size: 1rem;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0%;
+    width: 100%;
+    color: #FFF;
 }
 
-footer p {
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.container {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-footer .contato {
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
 }
-.contato a{
-    align-items: center;
-    margin: 0 .5%;
+
+.footer-links li {
+    display: inline;
 }
+
+.footer-links li a {
+    color: #30e389;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links li a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
 
 /*FIM FOOTER*/
 
@@ -266,6 +286,7 @@ footer .contato {
     html {
         scroll-behavior: smooth;
     }
+
     /*MENU HAMBURGUER*/
     .menu .menu-faketrigger {
         position: absolute;
@@ -275,12 +296,14 @@ footer .contato {
         opacity: 0;
         margin: -16px 0 0 10px;
     }
+
     .menu .menu-lines {
         position: absolute;
         z-index: 999;
         width: 35px;
         height: 35px;
     }
+
     .menu .menu-lines span {
         display: block;
         width: 35px;
@@ -290,26 +313,33 @@ footer .contato {
         border-radius: 4px;
         transition: all ease .3s;
     }
+
     header nav .menu-faketrigger {
         display: block;
     }
+
     .menu .menu-faketrigger:checked~.menu-lines span {
         background-color: aliceblue;
     }
+
     .menu .menu-faketrigger:checked~.menu-lines span:nth-child(1) {
         transform-origin: 0% 0%;
         transform: rotate(43deg)scaleX(1.25);
     }
+
     .menu .menu-faketrigger:checked~.menu-lines span:nth-child(2) {
         opacity: 0;
     }
+
     .menu .menu-faketrigger:checked~.menu-lines span:nth-child(3) {
         transform-origin: 0% 100%;
         transform: rotate(-45deg) scaleX(1.25);
     }
+
     .menu .menu-lines {
         margin: -16px 0 0 10px;
     }
+
     .menu ul {
         position: absolute;
         z-index: 998;
@@ -322,20 +352,25 @@ footer .contato {
         margin-left: -250px;
         transition: all ease .4s;
     }
+
     .menu .menu-faketrigger:checked~ul {
         transition: all ease .4s;
         margin-left: 0;
     }
+
     header nav ul {
         display: block;
     }
+
     header nav ul li a {
         color: #30E389;
     }
+
     header .logo {
         width: 32%;
         margin: 0 10px;
     }
+
     /*FIM DO MENU*/
 
     /*INICIO TITULO */
@@ -347,32 +382,39 @@ footer .contato {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
     .slider {
         margin: 0 auto;
         width: 100%;
         height: 200px;
         overflow: hidden;
     }
+
     .slides {
         width: 400%;
         height: 300px;
         display: flex;
     }
+
     .slides input {
         display: none;
     }
+
     .slide {
         transition: 2s;
         width: 25%;
         position: relative;
     }
+
     .slide img {
         width: 100%;
     }
+
     .manual-navigation,
     .navigation-auto {
         display: none;
     }
+
     /*FIM TITULO*/
 
     /*INICIO SOBRE*/
@@ -380,59 +422,95 @@ footer .contato {
         background-color: #eeeeeef5;
         padding: 10px 15px 50px 15px;
     }
+
     .sobreT h2 {
         margin-bottom: 10px;
         font-size: 2.5rem;
         text-align: center;
     }
+
     .card-sobre {
+        text-align: justify;
         padding: 15px 15px;
         margin: 0 5%;
     }
+
     .card-sobre p {
+        text-align: justify;
         line-height: 1.25;
         font-size: 1.3rem;
     }
+
     /*FIM SOBRE*/
 
     /*INICIO ADOÇAO*/
     .Adocao {
         padding: 50px 15px 25px 15px;
     }
+
     .adocaoT h2 {
         margin-bottom: 10px;
         font-size: 2rem;
         text-align: center;
     }
+
     .card-adocao {
+        text-align: justify;
         padding: 15px 15px;
         margin: 0 5%;
     }
+
     .card-adocao p {
+        text-align: justify;
         line-height: 1.25;
         font-size: 1.3rem;
     }
+
     /*FIM ADOÇÃO*/
 
     .Doacao {
         background-color: #eeeeeef5;
         padding: 50px 15px 10px 15px;
     }
+
     .doacaoT h2 {
         margin-bottom: 10px;
         font-size: 2rem;
         text-align: center;
     }
+
     .card-doacao {
+        text-align: justify;
         padding: 15px 15px;
         margin: 0 5%;
     }
+
     .card-doacao p {
+        text-align: justify;
         line-height: 1.25;
         font-size: 1.3rem;
     }
 
-    footer {
+    .subir {
+        display: block;
+        scroll-behavior: smooth;
+        border: 1px solid #30E389;
+        background-color: #30E389;
+        position: fixed;
+        bottom: 0;
+        border-radius: 50%;
+        margin: 0 1% 4% 85%;
+        justify-content: right;
+        width: 50px;
+        height: 50px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .subir img {
+        width: 60%;
+    }
+
+    /*footer {
         background-color: #30E389;
         padding: 20px 0;
     }
@@ -444,5 +522,40 @@ footer .contato {
     }
     .contato a{
         margin: 0 .5%;
+    }
+    */
+    footer {
+        font-size: .8rem;
+        background-color: #333;
+        padding: 20px 0;
+        text-align: center;
+        bottom: 0%;
+        width: 100%;
+        color: #FFF;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .footer-links li {
+        display: inline;
+    }
+
+    .footer-links li a {
+        color: #30e389;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .footer-links li a:hover {
+        text-decoration: underline;
     }
 }
