@@ -230,15 +230,17 @@ header .logo {
     margin: 20PX auto;
     border-radius: 25px;
 }
+.btnDA:link{
+    color: red ;
+}
 
-.btnDA a {
+.btnDA a  {
     text-decoration: none;
     user-select: none;
     cursor: pointer;
     font-size: 1.3rem;
     color: #000000;
 }
-
 .subir{
     display: none;
 }
@@ -499,13 +501,12 @@ footer {
         position: fixed;
         bottom: 0;
         border-radius: 50%;
-        margin: 0 1% 4% 85%;
+        margin: 0 0% 5% 80%;
         justify-content: right;
         width: 50px;
         height: 50px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
-
     .subir img {
         width: 60%;
     }
