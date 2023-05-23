@@ -194,8 +194,6 @@ header .logo {
 }
 
 .Doacao {
-
-    margin: 1% 0 0 0;
     padding: 15PX 0;
 }
 
@@ -348,7 +346,7 @@ footer {
         left: 0;
         top: 0;
         width: 210px;
-        height: 100vh;
+        height: 100%;
         background-color: #333;
         padding-top: 150px;
         margin-left: -250px;
@@ -526,9 +524,9 @@ footer {
     }
     */
     footer {
-        font-size: .8rem;
+        font-size: .9rem;
         background-color: #333;
-        padding: 20px 0;
+        padding: 60px 0;
         text-align: center;
         bottom: 0%;
         width: 100%;
