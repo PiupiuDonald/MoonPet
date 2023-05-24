@@ -37,7 +37,7 @@
     }
     header nav ul li {
         font-size: 1.2rem;
-        padding: 1% 1.2em;
+        padding: 10% 1.2em;
     }
     header nav ul li a {
         text-decoration: none;
@@ -131,12 +131,12 @@
 /*Cards Sobre/Adoção/Adoção*/
 
 /*Titulos Sobre/Adoção/Doação*/
-    .sobreT  ,
-    .adocaoT ,
-    .doacaoT {
-        margin-left: 25% ;
+    .sobreT  h2 ,
+    .adocaoT h2 ,
+    .doacaoT h2 {
+        margin-left: 25%;
         margin-bottom: 1%;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 /*Titulos Sobre/Adoção/Doação*/
 
@@ -146,7 +146,7 @@
     .Doacao p {
         text-align: justify;
         padding:   0 25%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 /*Paragrafos Sobre/Adoção/Doação*/
 
@@ -343,6 +343,7 @@
     .sobreT  h2 ,
     .adocaoT h2 ,
     .doacaoT h2 {
+        margin-left: 0;
         margin-bottom: 10px;
         font-size: 2rem;
         text-align: center;
@@ -354,8 +355,8 @@
     .Adocao p ,
     .Doacao p {
         padding: 0;
-        line-height: 1.25;
-        font-size: 1.3rem;
+        line-height: 1.50;
+        font-size: 1.2rem;
     }
 /*Paragrafos Sobre/Adoção/Doação*/
 
