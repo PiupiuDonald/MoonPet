@@ -462,9 +462,9 @@ input:-webkit-autofill
         padding: 0 1%;
     }
     header{
-        margin: 0 0 20% 0;
+        margin: 0 0 10% 0;
         z-index: auto;
-        padding: 1% 0;
+        padding: 3% 0;
     }
     header nav ul li{
         font-size: .9rem;
