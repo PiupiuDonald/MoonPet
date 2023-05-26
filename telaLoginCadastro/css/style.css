@@ -462,6 +462,7 @@ input:-webkit-autofill
         padding: 0 1%;
     }
     header{
+        margin: 0 0 20% 0;
         z-index: auto;
         padding: 1% 0;
     }
