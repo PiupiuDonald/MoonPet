@@ -463,7 +463,7 @@ input:-webkit-autofill
     }
     header{
         z-index: auto;
-        padding: 2% 0;
+        padding: 1% 0;
     }
     header nav ul li{
         font-size: .9rem;
