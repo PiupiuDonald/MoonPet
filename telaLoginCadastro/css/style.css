@@ -462,7 +462,7 @@ input:-webkit-autofill
         padding: 0 1%;
     }
     header{
-        margin-bottom: 20%;
+        margin-bottom: 1%;
         z-index: auto;
         padding: 2% 0;
     }
@@ -471,7 +471,7 @@ input:-webkit-autofill
         align-items: center;
     }
     footer {
-        margin: 60px 0 0 0;
+        margin: 1% 0 0 0;
         font-size: .9rem;
         background-color: #333;
         padding: 60px 0;
@@ -509,7 +509,7 @@ input:-webkit-autofill
     .content {
         border: 1px solid black;
         width: 100%;
-        height: 115%;
+        height: 100%;
         border-radius: 0;
     }
 
