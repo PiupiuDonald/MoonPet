@@ -48,9 +48,8 @@
         transition: all ease .3s;
         text-decoration: underline;
     }
-/*Fim Nav-Bar*/
 
-/*Inicio Introdução*/
+    /*Inicio Introdução*/
     .titulo {
         font-size: 40px;
         margin: 10px 1.2em;
@@ -60,6 +59,9 @@
         -webkit-text-fill-color: transparent;
     }
 /*Fim Introdução
+/*Fim Nav-Bar*/
+
+
 
 /*Inicio Slider desktop*/
     .slider {
@@ -289,9 +291,6 @@
         color: var(--verde-Padrao);
     }
 
-/*Fim Menu*/
-
-/*Inicio Banner*/
     .titulo {
         font-size: 34px;
         margin: 20px .4em;
@@ -300,6 +299,11 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+/*Fim Menu*/
+
+/*Inicio Banner*/
+    
     .slider {
         margin: 0 auto;
         width: 100%;
