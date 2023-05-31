@@ -68,7 +68,7 @@
         display: block;
         margin: 0 auto;
         width: 100%;
-        height: 500px;
+        height: 560px;
         overflow: hidden;
     }
     .slides {
@@ -80,12 +80,13 @@
         display: none;
     }
     .slide {
-        transition: 2s;
+        transition: 1s;
         width: 25%;
         position: relative;
     }
     .slide img {
-        width: 100%;
+        width: 1950px;
+        height: 29vw;
     }
     #radio1:checked~.first {
         margin-left: 0;
@@ -112,7 +113,7 @@
     }
     .navigation-auto {
         position: absolute;
-        width: 1550px;
+        width: 1600px;
         margin-top: 470px;
         display: flex;
         justify-content: center;
@@ -157,14 +158,15 @@
     .btnAdocao ,
     .btnDoacao {
         cursor: pointer;
-        border: 2PX solid var(--verde-Padrao);
+        border: 2PX solid var(--preto);
         justify-content: center;
         text-align: center;
         padding: 10px 8px;
         width: 150px;
-        background-color: var(--preto);
+        background-color: var(--verde-Padrao);
         align-items: center;
         margin: 1% 0 0 67%;
+        border-radius: 16px;
         
         
     }
@@ -178,10 +180,16 @@
     }
     .btnAdocao:hover,
     .btnDoacao:hover {
-        background-color: var(--verde-Padrao);
+        background-color: var(--preto);
         border-radius: 16px;
         transition: all .8s;
-        color: var(--preto);
+        border: 2px solid var(--verde-Padrao);
+        color: var(--branco);
+    }
+
+    .btnAdocao:active,
+    .btnDoacao:active{
+        border-radius: 16px;
     }
 /*Botões Adoção e Doação*/
 
