@@ -8,8 +8,8 @@
     --preto:            #333;
     --branco:           #fff;
     --verde-Padrao:     #30E399;
-    --background:       #e0e0e0;
-    --background-Adocao:#d3d3d3f5;
+    --background:       #f1f1f1;
+    --background-Adocao:#fffffff5;
     --hover:            #d7eaf9;
 }
 /*basico*/
@@ -156,15 +156,16 @@
 /*Botões Adoção e Doação*/
     .btnAdocao ,
     .btnDoacao {
-        box-shadow: 1px 2px rgb(150, 146, 146);
+        cursor: pointer;
+        border: 2PX solid var(--verde-Padrao);
         justify-content: center;
         text-align: center;
         padding: 10px 8px;
         width: 150px;
-        background-color: var(--verde-Padrao);
+        background-color: var(--preto);
         align-items: center;
-        margin: 5% auto 0 auto;
-        border-radius: 25px;
+        margin: 1% 0 0 67%;
+        
         
     }
     .btnAdocao a , 
@@ -173,6 +174,13 @@
         user-select: none;
         cursor: pointer;
         font-size: 1.5rem;
+        color: var(--branco);
+    }
+    .btnAdocao:hover,
+    .btnDoacao:hover {
+        background-color: var(--verde-Padrao);
+        border-radius: 16px;
+        transition: all .8s;
         color: var(--preto);
     }
 /*Botões Adoção e Doação*/
@@ -361,6 +369,20 @@
         padding: 0;
         line-height: 1.50;
         font-size: 1.2rem;
+    }
+
+    .btnAdocao ,
+    .btnDoacao {
+        box-shadow: 1px 2px rgb(150, 146, 146);
+        justify-content: center;
+        text-align: center;
+        padding: 10px 8px;
+        width: 150px;
+        background-color: var(--verde-Padrao);
+        align-items: center;
+        margin: 5% auto 0 auto;
+        
+        
     }
 /*Paragrafos Sobre/Adoção/Doação*/
 
