@@ -14,7 +14,7 @@
     <title>MoonPet</title>
 </head>
 
-<body>
+<body class="body">
     <!--Inicio Botâo de subir pro inicio-->
     <a href="#inicio"><button class="subir"><img src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646212_1280.png"></button></a>
     <!--Fim Botâo de subir pro inicio-->
@@ -25,7 +25,7 @@
         <!--Inicio Nav-Bar-->
         <nav class="menu">
             <!--Inicio Menu hamburguer-->
-            <input type="checkbox" class="menu-faketrigger">
+            <input type="checkbox" class="menu-faketrigger" id="menu">
 
             <div class="menu-lines">
                 <span></span>
@@ -216,6 +216,25 @@
         function handlePopup(open){
             popup.classList[open ? 'add' : 'remove'] ('opened');
         }
+        
+        function toggleCheckboxOnMobile() {
+        var checkbox = document.getElementById('menu');
+
+        document.addEventListener('touchstart', function(event) {
+
+            if (typeof event.touches !== 'undefined') { 
+                checkbox.checked = false;
+            }
+            else{
+                checkbox.checked = true;
+            }
+    });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        toggleCheckboxOnMobile();
+    });
+
     </script>
     <!--Script slider-->
 </body>
