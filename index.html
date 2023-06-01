@@ -219,11 +219,15 @@
         
         function toggleCheckboxOnMobile() {
         var checkbox = document.getElementById('menu');
+        var menu = document.getElementById('inicio');
 
         document.addEventListener('touchstart', function(event) {
 
             if (typeof event.touches !== 'undefined') { 
                 checkbox.checked = false;
+            }
+            else if(typeof event.touches == menu){
+                checkbox.checked = true;
             }
             else{
                 checkbox.checked = true;
