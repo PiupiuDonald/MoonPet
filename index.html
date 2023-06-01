@@ -38,7 +38,7 @@
             <ul>
                 <li><a href="#ADOTAR">Adote</a></li>
                 <li><a href="#DOAR">Doe</a></li>
-                <li><a href="TelaContato/contato.html" target="_self">Fale Conosco</a></li>
+                <li><button type="submit" onclick="handlePopup(false)">Fale Conosco</button></li>
                 <li><a href="Tela de Login/login.html" target="_self">Login</a></li>
             </ul>
             <!--Fim Links Menu-->
@@ -184,14 +184,39 @@
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="#">Sobre Nós</a></li>
                 <li><a href="#">Serviços</a></li>
-                <li><a href="TelaContato/contato.html" target="_self">Contato</a></li>
+                <li><button class="popup-btn" type="submit" onclick="handlePopup(false)">Contato</button></li>
             </ul>
         </div>
     </footer>
     <!--Fim Footer-->
 
+    <!--Contato-->
+    <section class="Contato popup opened" id="popup">
+        <button type="submit" class="close-popup-btn" onclick="handlePopup(true)">Fechar</button>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit" class="btn-form" >Enviar</button>
+
+            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+        </form>
+    </section>
+    <!--Contato-->
     <!--Script slider-->
     <script src="assets/js/slide.js"></script>
+    <script>
+        const popup = document.getElementById('popup');
+
+        function handlePopup(open){
+            popup.classList[open ? 'add' : 'remove'] ('opened');
+        }
+    </script>
     <!--Script slider-->
 </body>
 
