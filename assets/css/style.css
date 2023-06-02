@@ -75,6 +75,9 @@
 
 
 /*Inicio Slider desktop*/
+.introducao{
+    display: none;
+}
     .slider {
         display: block;
         margin: 0 auto;
@@ -475,7 +478,12 @@ form button:hover{
 /*Fim Menu*/
 
 /*Inicio Banner*/
-    
+.Galeria{
+    display: none;
+}
+    .introducao{
+        display: block;
+    }
     .slider {
         margin: 0 auto;
         width: 100%;
