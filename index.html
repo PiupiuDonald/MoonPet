@@ -260,15 +260,12 @@
         
         function toggleCheckboxOnMobile() {
         var checkbox = document.getElementById('menu');
-        var menu = document.getElementById('inicio');
+        var menu = document.querySelector('#main');
 
         document.addEventListener('touchstart', function(event) {
 
-            if (typeof event.touches !== 'undefined') { 
+            if (typeof event.touches !== menu) { 
                 checkbox.checked = false;
-            }
-            else if(typeof event.touches == menu){
-                checkbox.checked = true;
             }
             else{
                 checkbox.checked = true;
@@ -280,8 +277,8 @@
         toggleCheckboxOnMobile();
     });
 
-
-    const items = document.querySelectorAll(".item");
+    //destop
+        const items = document.querySelectorAll(".item");
         items.forEach((item) => {
         item.addEventListener("click",() =>{
             if(item.classList.contains("show")){
