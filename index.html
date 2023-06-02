@@ -53,21 +53,20 @@
 
     <!--Main Inicio-->
     <main>
-        <!--Carrossel-->
+        <!--Carrossel
         <div class="Introducao">
 
-            <!--Inicio slider-->
+            Inicio slider
             <div class="slider">
                 <div class="slides">
 
-                    <!--Radio Button-->
                     <input type="radio" name="radio-btn" id="radio1">
                     <input type="radio" name="radio-btn" id="radio2">
                     <input type="radio" name="radio-btn" id="radio3">
                     <input type="radio" name="radio-btn" id="radio4">
-                    <!--Fim Radio Button-->
+            
 
-                    <!--Imagens do Slide-->
+                
                     <div class="slide first">
                         <img src="assets/imagens/rato" alt="Slide1">
                     </div>
@@ -79,16 +78,58 @@
                         <img src="assets/imagens/gatinho.png" alt="Slide3">
                     </div>
                     <div class="slide">
-                        <img src="assets/imagens/coelho.jpeg " alt="Slide4">
+                        <img src="assets/imagens/coelho_adobe_express.svg" alt="Slide4">
                     </div>
-                    <!--Imagens do Slide Fim-->
+                 
 
                 </div>
             </div>
-            <!--Fim do Slider-->
+            Fim do Slider
 
         </div>
-        <!--Fim Carrossel-->
+        Fim Carrossel-->
+        <section class="Galeria">
+            <div class="item">
+                <img src="assets/imagens/grupo-retrato-de-cinco-adoravel-filhotes-cachorro.jpg  ">
+                <div class="legenda">
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+    
+            <div class="item">
+                <img src="assets/imagens/gato.jpeg"> <div class="legenda">
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="assets/imagens/burro.png">
+                <div class="legenda">
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div> 
+
+            <div class="item">
+                <img src="assets/imagens/vista-lateral-sorridente-mulher-abracando-cachorro (1).jpg">
+                <div class="legenda">
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+    
+            <div class="item">
+                <img src="assets/imagens/gatinho.png"> <div class="legenda">
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            </div>
+    
+            
+        </section>
 
         <!--Inicio Sobre-->
         <section class="Sobre">
@@ -239,6 +280,20 @@
         toggleCheckboxOnMobile();
     });
 
+
+    const items = document.querySelectorAll(".item");
+        items.forEach((item) => {
+        item.addEventListener("click",() =>{
+            if(item.classList.contains("show")){
+                item.classList.remove("show");
+            }
+            else{
+                item.classList.add("show");
+            }
+            //items.forEach((item) => item.classList.remove("show"));
+            
+        });
+    });
     </script>
     <!--Script slider-->
 </body>
